@@ -1,0 +1,44 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form | By Code Info</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-container">
+        <div class="loginbox">
+            <div class="picture_Login">
+                <img src="./Brainstorming (HD).png" alt="Login image">
+            </div>
+            <div class="form">
+            <form class="form">
+                <h1>Log-In</h1>
+                <input type="text"  placeholder="Enter Username" id="password>
+                <input type="password" id="password" placeholder="Enter Password" id="password">
+                <input type="submit" value="Sign In">
+            </form>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const p = 278;
+            //check correct pattern of password
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    
+            if (!passwordPattern.test(password)) {
+                alert('Password must be at least 8 characters long, with one uppercase letter, one lowercase letter, and one number.');
+                return false; 
+            }
+    
+            return true;
+        }
+    </script>
+    
+    </body>
+    </html>
